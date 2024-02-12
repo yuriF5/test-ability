@@ -3,7 +3,7 @@
 ## 環境構築
 ### Dockerビルド
  
- 1.git clone 
+ 1.git clone: http://https://github.com/coachtech-material/laravel-docker-template
  
  2.docker-compose up -d--build
 
@@ -21,7 +21,7 @@
  
  6.php artisan db:seed
 
-##使用技術
+## 使用技術
 - PHP 8.1
 - Laravel 8.0
 - MySQL 10.6
