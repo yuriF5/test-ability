@@ -28,7 +28,7 @@
 - OS windows 11
 
 ## ER図
-ER test-ability.drawio.png
+[ER test-ability.drawio.png](https://github.com/yuriF5/test-ability/issues/1#issue-2129460073)
 
 ## URL
 - 開発環境：http://localhost/
