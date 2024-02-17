@@ -74,20 +74,19 @@
                 <input type="building" name="building" value="{{ $contact['building'] }}"readonly />
                 </td>
             </tr>
-
-              <tr class="confirm-table__row">
+            <tr class="confirm-table__row">
               <th class="confirm-table__header">お問い合わせ種類</th>
-                          <td class="confirm-table__text">
-                            <input type="hidden" name="content" value="{{ $contact['content'] }}"readonly />
-                            <?php
-                                if ($contact['content'] == '1') {
-                                echo '商品のお届けについて';} else if ($contact['content'] == '2') {
-                                echo '商品の交換について';} else if ($contact['content'] == '3') {
-                                echo '商品トラブル';}else if ($contact['content'] == '4') {
-                                echo 'ショップへのお問い合わせ';} else if ($contact['content'] == '5') {
-                                echo 'その他';} 
-                                ?>
-                        </td>
+                <td class="confirm-table__text">
+                  <input type="hidden" name="content" value="{{ $contact['content'] }}"readonly />
+                  <?php
+                  if ($contact['content'] == '1') {
+                  echo '商品のお届けについて';} else if ($contact['content'] == '2') {
+                  echo '商品の交換について';} else if ($contact['content'] == '3') {
+                  echo '商品トラブル';}else if ($contact['content'] == '4') {
+                  echo 'ショップへのお問い合わせ';} else if ($contact['content'] == '5') {
+                  echo 'その他';} 
+                  ?>
+                </td>
             </tr>
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お問い合わせ内容</th>
@@ -95,7 +94,6 @@
                 <input type="text" name="detail" value="{{ $contact['detail'] }}" readonly />
               </td>
             </tr>
-            
           </table>
         </div>
           <div class=submit-button>
