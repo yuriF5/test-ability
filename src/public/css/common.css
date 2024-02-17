@@ -1,0 +1,30 @@
+.header {
+    background: #FFFFFF;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.header-utilities a{
+    margin:0auto;
+    width: 800px;
+}
+.header__inner {
+    margin: 0 auto;
+
+}
+
+.header-utilities {
+    margin: 0 auto;
+    align-items: center;
+    width: 800px;
+}
+
+.header__logo {
+    color: #0d0c0c;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 auto;
+    width: 800px;
+}
+
+
