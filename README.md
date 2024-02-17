@@ -28,7 +28,7 @@
 - OS windows 11
 
 ## ER図
-<img src="https://github.com/yuriF5/test-ability/assets/152612024/c131ca44-a62e-4426-848e-4430a678ad13" width="30%">
+<img src="https://github.com/yuriF5/test-ability/assets/152612024/63270cb8-8e56-4578-abd0-4f71e0e7f852" width="80%">
 
 ## URL
 - 開発環境：http://localhost/
