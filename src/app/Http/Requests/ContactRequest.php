@@ -24,30 +24,40 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-        'last_name' => ['required', 'string', 'max:255'],
-        'first_name' => ['required', 'string', 'max:255'],
-        'gender' => ['required'],
-        'email' => ['required', 'string', 'email', 'max:255'],
-        'address' => ['required', 'string', 'max:255'],
-        'content' => ['string'],
-        'detail' => ['required', 'string', 'max:120'],
-        'password' => ['required'],
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'gender' => 'required',
+            'email' => 'required | email',
+            'tel_1' => 'required | max:5 | regex:/^[0-9]+$/',
+            'tel_2' => 'required | max:5 | regex:/^[0-9]+$/',
+            'tel_3' => 'required | max:5 | regex:/^[0-9]+$/',
+            'address' => 'required',
+            'category_id' => 'required',
+            'detail' => 'required | max:120',
         ];
     }
+
     public function messages()
     {
-    return [
-        'last_name.required' => '性を入力してください',
-        'first_name.required' => '名を入力してください',
-        'gender' => '性別を入力してください',
-        'email.required' => 'メールアドレスを入力してください',
-        'email.email' => '有効なメールアドレス形式を入力してください',
-        'tel.max' => '電話番号を5桁以内で入力してください',
-        'address.required' => '住所を入力してください',
-        'content.required' => 'お問い合わせ種類を選択してください',
-        'detail.max' => 'お問い合わせ内容は120文字以内で入力してください',
-        'password.required'=>'パスワードを入力して下さい'
+        return [
+            'first_name.required' => '姓を入力してください',
+            'last_name.required' => '名を入力してください',
+            'gender.required' => '性別を選択してください',
+            'email.required' => 'メールアドレスを入力してください',
+            'email.email' => 'メールアドレスはメール形式で入力してください',
+            'tel_1.required' => '電話番号を入力してください',
+            'tel_1.regex' => '電話番号は半角数字で入力してください',
+            'tel_1.max' => '電話番号は5桁までの数字で入力してください',
+            'tel_2.required' => '電話番号を入力してください',
+            'tel_2.regex' => '電話番号は半角数字で入力してください',
+            'tel_2.max' => '電話番号は5桁までの数字で入力してください',
+            'tel_3.required' => '電話番号を入力してください',
+            'tel_3.regex' => '電話番号は半角数字で入力してください',
+            'tel_3.max' => '電話番号は5桁までの数字で入力してください',
+            'address.required' => '住所を入力してください',
+            'category_id.required' => 'お問い合わせの種類を選択してください',
+            'detail.required' => 'お問い合わせの内容を入力してください',
+            'detail.max' => 'お問い合わせ内容は120文字以内で入力してください',
         ];
     }
 }
-
